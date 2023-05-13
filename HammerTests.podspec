@@ -9,7 +9,6 @@ Pod::Spec.new do |spec|
   spec.author        = { "Gabriel Lanata" => "gabriel@lanata.me" }
   spec.platform      = :ios, "11.0"
   spec.swift_version = "5.3"
-  spec.frameworks    = 'XCTest'
   spec.source        = { :git => "https://github.com/lyft/Hammer.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/**/*.swift"
   spec.requires_arc  = true
