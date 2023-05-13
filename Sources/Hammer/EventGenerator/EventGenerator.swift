@@ -181,6 +181,9 @@ public final class EventGenerator {
 //         let waiter = Waiter(timeout: 1)
 //         try self.sendMarkerEvent { try? waiter.complete() }
 //         try waiter.start()
+        let runLoop = CFRunLoopGetCurrent()
+         try self.sendMarkerEvent { CFRunLoopStop(runLoop) }
+         CFRunLoopRun()
     }
 }
 
