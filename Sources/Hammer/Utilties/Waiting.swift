@@ -1,10 +1,10 @@
 import Foundation
 import UIKit
-import XCTest
+// import XCTest
 
 extension EventGenerator {
     /// Object to handle waiting
-    public final class Waiter {
+    /*public final class Waiter {
         public enum State {
             case idle
             case running
@@ -56,7 +56,7 @@ extension EventGenerator {
 
             self.expectation.fulfill()
         }
-    }
+    }*/
 
     /// Waits for a specified time.
     ///
@@ -64,7 +64,7 @@ extension EventGenerator {
     ///
     /// - throws: An error if there was an issue during waiting.
     public func wait(_ interval: TimeInterval) throws {
-        try Waiter(timeout: interval).start()
+//         try Waiter(timeout: interval).start()
     }
 
     /// Waits for a condition to become true within the specified time.
