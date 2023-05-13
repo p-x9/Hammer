@@ -178,9 +178,9 @@ public final class EventGenerator {
 
     /// Sleeps the current thread until the events have finished sending.
     private func waitForEvents() throws {
-        let waiter = Waiter(timeout: 1)
-        try self.sendMarkerEvent { try? waiter.complete() }
-        try waiter.start()
+//         let waiter = Waiter(timeout: 1)
+//         try self.sendMarkerEvent { try? waiter.complete() }
+//         try waiter.start()
     }
 }
 
