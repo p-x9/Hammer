@@ -65,6 +65,7 @@ extension EventGenerator {
     /// - throws: An error if there was an issue during waiting.
     public func wait(_ interval: TimeInterval) throws {
 //         try Waiter(timeout: interval).start()
+        CFRunLoopRunInMode(CFRunLoopMode.defaultMode, interval, false)
     }
 
     /// Waits for a condition to become true within the specified time.
